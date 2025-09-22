@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi primera página</title>
-</head>
-<body>
-  <h1 id="saludo"></h1>
+// Declaracion de variables 
+let nombre = "sofia rivera";
+let edad = 35;
+let cumpleaños = "19 de enero";
+let direccion = "Av. jerusalen 356";
+let telefono = "991-345-065";
+let correo = "sofia.river@gmail.com";
 
-  <script src="script.js"></script>
-</body>
-</html>
+
+//Mostrar todo en una sola linea 
+console.log (`Nombre: ${nombre}, Edad: ${edad},Cumpleaños: ${cumpleaños}, Direccion: ${direccion}, Telefono: ${telefono}, Correo: ${correo}`);
+
+// Mostrar en la página dentro del div con id "saludo"
+document.getElementById("saludo").innerHTML = `
+  <p><strong>Nombre:</strong> ${nombre}</p>
+  <p><strong>Edad:</strong> ${edad}</p>
+  <p><strong>Cumpleaños:</strong> ${cumpleaños}</p>
+  <p><strong>Dirección:</strong> ${direccion}</p>
+  <p><strong>Teléfono:</strong> ${telefono}</p>
+  <p><strong>Correo:</strong> ${correo}</p>`;
